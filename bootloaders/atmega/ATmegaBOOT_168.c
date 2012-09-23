@@ -339,7 +339,7 @@ int main(void)
 	}
 #endif
 
-#if defined __AVR_ATmega1280__  || defined __AVR_ATmega1284P__ || defined __AVR_ATmega644P__ || defined __AVR_ATmega644__
+#if defined __AVR_ATmega1280__  || defined __AVR_ATmega1284P__ || defined __AVR_ATmega644P__
 	/* the mega1280 chip has four serial ports ... we could eventually use any of them, or not? */
 	/* however, we don't wanna confuse people, to avoid making a mess, we will stick to RXD0, TXD0 */
 	bootuart = 1;
@@ -446,7 +446,7 @@ int main(void)
 
 
 	/* flash onboard LED to signal entering of bootloader */
-#if defined(__AVR_ATmega128__) || defined(__AVR_ATmega1280__) || defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega644P__) || defined(__AVR_ATmega644__)
+#if defined(__AVR_ATmega128__) || defined(__AVR_ATmega1280__) || defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega644P__)
 	// 4x for UART0, 5x for UART1
 	flash_led(NUM_LED_FLASHES + bootuart);
 #else
@@ -949,7 +949,7 @@ void putch(char ch)
 {
 #if defined(__AVR_ATmega644__)
     while (!(UCSR0A & _BV(UDRE0)));
-    UDR0 = ch
+    UDR0 = ch;
 #elif defined(__AVR_ATmega128__) || defined(__AVR_ATmega1280__) || defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega644P__)
 	if(bootuart == 1) {
 		while (!(UCSR0A & _BV(UDRE0)));
@@ -1038,7 +1038,7 @@ void getNch(uint8_t count)
 #if defined(__AVR_ATmega644__)
         while(!(UCSR0A & _BV(RXC0)));
         UDR0;
-#if defined(__AVR_ATmega128__) || defined(__AVR_ATmega1280__) || defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega644P__)
+#elif defined(__AVR_ATmega128__) || defined(__AVR_ATmega1280__) || defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega644P__)
 		if(bootuart == 1) {
 			while(!(UCSR0A & _BV(RXC0)));
 			UDR0;
