@@ -371,7 +371,7 @@ int main(void)
 
 
 	/* initialize UART(s) depending on CPU defined */
-#if defined(__AVR_ATmega644__)
+#ifdef __AVR_ATmega644__
     UBRR0L = (uint8_t)(F_CPU/(BAUD_RATE*16L)-1);
     UBRR0H = (F_CPU/(BAUD_RATE*16L)-1) >> 8;
     UCSR0A = 0x00;
@@ -947,7 +947,7 @@ void puthex(char ch) {
 
 void putch(char ch)
 {
-#if defined(__AVR_ATmega644__)
+#ifdef __AVR_ATmega644__
     while (!(UCSR0A & _BV(UDRE0)));
     UDR0 = ch;
 #elif defined(__AVR_ATmega128__) || defined(__AVR_ATmega1280__) || defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega644P__)
@@ -972,7 +972,7 @@ void putch(char ch)
 
 char getch(void)
 {
-#if defined(__AVR_ATmega644__)
+#ifdef __AVR_ATmega644__
     uint32_t count = 0;
     while(!(UCSR0A & _BV(RXC0))) {
         /* 20060803 DojoCorp:: Addon coming from the previous Bootloader*/
@@ -1035,7 +1035,7 @@ char getch(void)
 void getNch(uint8_t count)
 {
 	while(count--) {
-#if defined(__AVR_ATmega644__)
+#ifdef __AVR_ATmega644__
         while(!(UCSR0A & _BV(RXC0)));
         UDR0;
 #elif defined(__AVR_ATmega128__) || defined(__AVR_ATmega1280__) || defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega644P__)
