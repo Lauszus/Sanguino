@@ -1,4 +1,4 @@
-#Makefile for ATmegaBOOT
+# Makefile for ATmegaBOOT
 # E.Lins, 18.7.2005
 # $Id$
 
@@ -10,10 +10,10 @@ PROGRAM    = ATmegaBOOT_644P
 AVR_FREQ   = 16000000L
 
 MCU_TARGET = atmega644p
-LDSECTION  = --section-start=.text=0x1F000
+LDSECTION  = --section-start=.text=0xF800
 
 OBJ        = $(PROGRAM).o
-OPTIMIZE   = -Os
+OPTIMIZE   = -O2
 
 DEFS       = 
 LIBS       = 
@@ -40,7 +40,7 @@ $(PROGRAM).elf: $(OBJ)
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(LIBS)
 	
 $(OBJ): ATmegaBOOT.c
-	avr-gcc $(CFLAGS) $(LDFLAGS) -c -g -Os -Wall -mmcu=$(MCU_TARGET) ATmegaBOOT.c -o $(PROGRAM).o
+	avr-gcc $(CFLAGS) $(LDFLAGS) -c -g -O2 -Wall -mmcu=$(MCU_TARGET) ATmegaBOOT.c -o $(PROGRAM).o
 
 %.lst: %.elf
 	$(OBJDUMP) -h -S $< > $@
