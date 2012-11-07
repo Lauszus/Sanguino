@@ -25,17 +25,19 @@ atmega644p.build.variant=standard
 
 atmega644.name=Sanguino W/ ATmega644
 
-atmega644.upload.protocol=stk500
+#atmega644.upload.protocol=stk500
+atmega644.upload.protocol=arduino
 atmega644.upload.maximum_size=63488
-atmega644.upload.speed=57600
+#atmega644.upload.speed=57600
+atmega644.upload.speed=38400
 
 atmega644.bootloader.low_fuses=0xFF
 atmega644.bootloader.high_fuses=0x9A
 atmega644.bootloader.extended_fuses=0xFF
-atmega644.bootloader.path=atmega
-atmega644.bootloader.file=ATmegaBOOT_168_atmega644.hex
-#atmega644.bootloader.path=atmega644
-#atmega644.bootloader.file=ATmegaBOOT_644.hex
+#atmega644.bootloader.path=atmega
+#atmega644.bootloader.file=ATmegaBOOT_168_atmega644.hex
+atmega644.bootloader.path=atmega644
+atmega644.bootloader.file=ATmegaBOOT_644.hex
 atmega644.bootloader.unlock_bits=0x3F
 atmega644.bootloader.lock_bits=0x0F
 
