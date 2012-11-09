@@ -7,6 +7,7 @@ This a Sanguino third-party hardware add-on for the Arduino IDE.
 
 To use it, simply create a folder named hardware inside your sketchbook directory.
 Now move the sanguino directory inside that folder. The structure would look like this:
+
 /hardware/sanguino/etc.
 
 For more information see the following site: [http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware](http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware)
