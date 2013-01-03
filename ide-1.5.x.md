@@ -16,5 +16,4 @@ To use it, simply create a folder named hardware inside your sketchbook director
 
 /hardware/sanguino/avr/etc.
 
-For more information see the following sites: [http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware](http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware) and [http://code.google.com/p/arduino/wiki/Platforms1](http://code.google.com/p/arduino/wiki/Platforms1)
-or send me an email at <a href="mailto:kristianl@tkjelectronics.dk?Subject=BalanduinoAndroidApp">kristianl@tkjelectronics.dk</a>.
+For more information see the following sites: <http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware> and <http://code.google.com/p/arduino/wiki/Platforms1> or send me an email at <a href="mailto:kristianl@tkjelectronics.dk?Subject=Sanguino">kristianl@tkjelectronics.dk</a>.
