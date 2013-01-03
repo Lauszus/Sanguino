@@ -13,4 +13,4 @@ Now move the sanguino directory inside that folder. The structure would look lik
 A version compatible with the Arduino IDE 1.5.x is also available at the [ide-1.5.x branch](https://github.com/Lauszus/sanguino/tree/ide-1.5.x).
 
 For more information see the following site: [http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware](http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware)
-or send me an email at <a href="mailto:kristianl@tkjelectronics.dk?Subject=BalanduinoAndroidApp">kristianl@tkjelectronics.dk</a>.
+or send me an email at <a href="mailto:kristianl@tkjelectronics.dk?Subject=Sanguino">kristianl@tkjelectronics.dk</a>.
