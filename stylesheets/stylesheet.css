@@ -262,6 +262,17 @@ img {
   max-width: 100%;
 }
 
+#ribbon {
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  max-width: 149px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
