@@ -217,12 +217,26 @@ atmega644p: AVR_FREQ = 16000000L
 atmega644p: LDSECTION  = --section-start=.text=0xF800
 atmega644p: $(PROGRAM)_atmega644p.hex
 
+atmega644pa: TARGET = atmega644pa
+atmega644pa: MCU_TARGET = atmega644pa
+atmega644pa: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=57600'
+atmega644pa: AVR_FREQ = 16000000L
+atmega644pa: LDSECTION  = --section-start=.text=0xF800
+atmega644pa: $(PROGRAM)_atmega644pa.hex	
+
 atmega644: TARGET = atmega644
 atmega644: MCU_TARGET = atmega644
 atmega644: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=57600'
 atmega644: AVR_FREQ = 16000000L
 atmega644: LDSECTION  = --section-start=.text=0xF800
 atmega644: $(PROGRAM)_atmega644.hex
+
+atmega644a: TARGET = atmega644a
+atmega644a: MCU_TARGET = atmega644a
+atmega644a: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=57600'
+atmega644a: AVR_FREQ = 16000000L
+atmega644a: LDSECTION  = --section-start=.text=0xF800
+atmega644a: $(PROGRAM)_atmega644a.hex
 
 atmega1284p_isp: atmega1284p
 atmega1284p_isp: TARGET = atmega1284p
