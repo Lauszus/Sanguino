@@ -15,7 +15,7 @@ atmega644.bootloader.file=ATmegaBOOT_168_atmega644.hex
 #atmega644.bootloader.file=ATmegaBOOT_644.hex
 
 atmega644.bootloader.low_fuses=0xFF
-atmega644.bootloader.high_fuses=0x9A
+atmega644.bootloader.high_fuses=0x9C
 atmega644.bootloader.extended_fuses=0xFF
 atmega644.bootloader.unlock_bits=0x3F
 atmega644.bootloader.lock_bits=0x0F
@@ -37,7 +37,7 @@ atmega644a.bootloader.path=atmega
 atmega644a.bootloader.file=ATmegaBOOT_168_atmega644a.hex
 
 atmega644a.bootloader.low_fuses=0xFF
-atmega644a.bootloader.high_fuses=0x9A
+atmega644a.bootloader.high_fuses=0x9C
 atmega644a.bootloader.extended_fuses=0xFF
 atmega644a.bootloader.unlock_bits=0x3F
 atmega644a.bootloader.lock_bits=0x0F
@@ -56,7 +56,7 @@ atmega644p.upload.maximum_size=63488
 atmega644p.upload.speed=57600
 
 atmega644p.bootloader.low_fuses=0xFF
-atmega644p.bootloader.high_fuses=0x9A
+atmega644p.bootloader.high_fuses=0x9C
 atmega644p.bootloader.extended_fuses=0xFF
 
 atmega644p.bootloader.path=atmega
@@ -81,7 +81,7 @@ atmega644pa.upload.maximum_size=63488
 atmega644pa.upload.speed=57600
 
 atmega644pa.bootloader.low_fuses=0xFF
-atmega644pa.bootloader.high_fuses=0x9A
+atmega644pa.bootloader.high_fuses=0x9C
 atmega644pa.bootloader.extended_fuses=0xFF
 
 atmega644pa.bootloader.path=atmega
@@ -104,7 +104,7 @@ atmega12848m.upload.maximum_size=131072
 atmega12848m.upload.speed=19200
 
 atmega12848m.bootloader.low_fuses=0xFD
-atmega12848m.bootloader.high_fuses=0x9A
+atmega12848m.bootloader.high_fuses=0x9C
 atmega12848m.bootloader.extended_fuses=0xFF
 atmega12848m.bootloader.path=atmega
 atmega12848m.bootloader.file=ATmegaBOOT_168_atmega1284p_8m.hex
@@ -125,7 +125,7 @@ atmega1284.upload.maximum_size=131072
 atmega1284.upload.speed=57600
 
 atmega1284.bootloader.low_fuses=0xFF
-atmega1284.bootloader.high_fuses=0x9A
+atmega1284.bootloader.high_fuses=0x9C
 atmega1284.bootloader.extended_fuses=0xFF
 atmega1284.bootloader.path=atmega
 atmega1284.bootloader.file=ATmegaBOOT_168_atmega1284p.hex
