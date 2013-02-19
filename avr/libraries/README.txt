@@ -1,0 +1,1 @@
+Specific libraries for Sanguino can be put inside this folder
