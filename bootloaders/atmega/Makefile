@@ -196,6 +196,20 @@ mega_isp: LFUSE = FF
 mega_isp: EFUSE = F5
 mega_isp: isp
 
+atmega1284: TARGET = atmega1284
+atmega1284: MCU_TARGET = atmega1284
+atmega1284: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=57600'
+atmega1284: AVR_FREQ = 16000000L 
+atmega1284: LDSECTION  = --section-start=.text=0x1F000
+atmega1284: $(PROGRAM)_atmega1284.hex
+
+atmega1284_8m: TARGET = atmega1284
+atmega1284_8m: MCU_TARGET = atmega1284
+atmega1284_8m: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=38400'
+atmega1284_8m: AVR_FREQ = 8000000L
+atmega1284_8m: LDSECTION  = --section-start=.text=0x1F000
+atmega1284_8m: $(PROGRAM)_atmega1284_8m.hex
+
 atmega1284p: TARGET = atmega1284p
 atmega1284p: MCU_TARGET = atmega1284p
 atmega1284p: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=57600'

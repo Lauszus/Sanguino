@@ -176,14 +176,14 @@ atmega644pa_8m.build.variant=standard
 
 ##############################################################
 
-atmega1284.name=Sanguino W/ ATmega1284P 16MHz
+atmega1284.name=Sanguino W/ ATmega1284 16MHz
 
 atmega1284.upload.maximum_size=131072
 
 atmega1284.upload.protocol=stk500
 atmega1284.upload.speed=57600
 atmega1284.bootloader.path=atmega
-atmega1284.bootloader.file=ATmegaBOOT_168_atmega1284p.hex
+atmega1284.bootloader.file=ATmegaBOOT_168_atmega1284.hex
 
 atmega1284.bootloader.low_fuses=0xFF
 atmega1284.bootloader.high_fuses=0x9C
@@ -191,21 +191,21 @@ atmega1284.bootloader.extended_fuses=0xFF
 atmega1284.bootloader.unlock_bits=0x3F
 atmega1284.bootloader.lock_bits=0x0F
 
-atmega1284.build.mcu=atmega1284p
+atmega1284.build.mcu=atmega1284
 atmega1284.build.f_cpu=16000000L
 atmega1284.build.core=arduino
 atmega1284.build.variant=standard
 
 ############################################################
 
-atmega1284_8m.name=Sanguino W/ ATmega1284P 8MHz
+atmega1284_8m.name=Sanguino W/ ATmega1284 8MHz
 
 atmega1284_8m.upload.maximum_size=131072
 
 atmega1284_8m.upload.protocol=stk500
 atmega1284_8m.upload.speed=38400
 atmega1284_8m.bootloader.path=atmega
-atmega1284_8m.bootloader.file=ATmegaBOOT_168_atmega1284p_8m.hex
+atmega1284_8m.bootloader.file=ATmegaBOOT_168_atmega1284_8m.hex
 
 atmega1284_8m.bootloader.low_fuses=0xFD
 atmega1284_8m.bootloader.high_fuses=0x9C
@@ -213,7 +213,51 @@ atmega1284_8m.bootloader.extended_fuses=0xFF
 atmega1284_8m.bootloader.unlock_bits=0x3F
 atmega1284_8m.bootloader.lock_bits=0x0F
 
-atmega1284_8m.build.mcu=atmega1284p
+atmega1284_8m.build.mcu=atmega1284
 atmega1284_8m.build.f_cpu=8000000L
 atmega1284_8m.build.core=arduino
 atmega1284_8m.build.variant=standard
+
+##############################################################
+
+atmega1284p.name=Sanguino W/ ATmega1284P 16MHz
+
+atmega1284p.upload.maximum_size=131072
+
+atmega1284p.upload.protocol=stk500
+atmega1284p.upload.speed=57600
+atmega1284p.bootloader.path=atmega
+atmega1284p.bootloader.file=ATmegaBOOT_168_atmega1284p.hex
+
+atmega1284p.bootloader.low_fuses=0xFF
+atmega1284p.bootloader.high_fuses=0x9C
+atmega1284p.bootloader.extended_fuses=0xFF
+atmega1284p.bootloader.unlock_bits=0x3F
+atmega1284p.bootloader.lock_bits=0x0F
+
+atmega1284p.build.mcu=atmega1284p
+atmega1284p.build.f_cpu=16000000L
+atmega1284p.build.core=arduino
+atmega1284p.build.variant=standard
+
+############################################################
+
+atmega1284p_8m.name=Sanguino W/ ATmega1284P 8MHz
+
+atmega1284p_8m.upload.maximum_size=131072
+
+atmega1284p_8m.upload.protocol=stk500
+atmega1284p_8m.upload.speed=38400
+atmega1284p_8m.bootloader.path=atmega
+atmega1284p_8m.bootloader.file=ATmegaBOOT_168_atmega1284p_8m.hex
+
+atmega1284p_8m.bootloader.low_fuses=0xFD
+atmega1284p_8m.bootloader.high_fuses=0x9C
+atmega1284p_8m.bootloader.extended_fuses=0xFF
+atmega1284p_8m.bootloader.unlock_bits=0x3F
+atmega1284p_8m.bootloader.lock_bits=0x0F
+
+atmega1284p_8m.build.mcu=atmega1284p
+atmega1284p_8m.build.f_cpu=8000000L
+atmega1284p_8m.build.core=arduino
+atmega1284p_8m.build.variant=standard
