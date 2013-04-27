@@ -11,6 +11,7 @@ sanguino.bootloader.tool=avrdude
 sanguino.bootloader.unlock_bits=0x3F
 sanguino.bootloader.lock_bits=0x0F
 
+sanguino.build.board=AVR_SANGUINO
 sanguino.build.core=arduino
 sanguino.build.variant=standard
 
