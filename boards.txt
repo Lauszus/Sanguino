@@ -3,6 +3,7 @@
 atmega644.name=Sanguino W/ ATmega644 16MHz
 
 atmega644.upload.maximum_size=63488
+atmega644.upload.maximum_data_size=4096
 
 atmega644.upload.protocol=stk500
 atmega644.upload.speed=57600
@@ -26,6 +27,7 @@ atmega644.build.variant=standard
 atmega644_8m.name=Sanguino W/ ATmega644 8MHz
 
 atmega644_8m.upload.maximum_size=63488
+atmega644_8m.upload.maximum_data_size=4096
 
 atmega644_8m.upload.protocol=stk500
 atmega644_8m.upload.speed=38400
@@ -49,6 +51,7 @@ atmega644_8m.build.variant=standard
 atmega644a.name=Sanguino W/ ATmega644A 16MHz
 
 atmega644a.upload.maximum_size=63488
+atmega644a.upload.maximum_data_size=4096
 
 atmega644a.upload.protocol=stk500
 atmega644a.upload.speed=57600
@@ -72,6 +75,7 @@ atmega644a.build.variant=standard
 atmega644a_8m.name=Sanguino W/ ATmega644A 8MHz
 
 atmega644a_8m.upload.maximum_size=63488
+atmega644a_8m.upload.maximum_data_size=4096
 
 atmega644a_8m.upload.protocol=stk500
 atmega644a_8m.upload.speed=38400
@@ -95,6 +99,7 @@ atmega644a_8m.build.variant=standard
 atmega644p.name=Sanguino W/ ATmega644P 16MHz
 
 atmega644p.upload.maximum_size=63488
+atmega644p.upload.maximum_data_size=4096
 
 atmega644p.upload.protocol=stk500
 atmega644p.upload.speed=57600
@@ -118,6 +123,7 @@ atmega644p.build.variant=standard
 atmega644p_8m.name=Sanguino W/ ATmega644P 8MHz
 
 atmega644p_8m.upload.maximum_size=63488
+atmega644p_8m.upload.maximum_data_size=4096
 
 atmega644p_8m.upload.protocol=stk500
 atmega644p_8m.upload.speed=38400
@@ -141,6 +147,7 @@ atmega644p_8m.build.variant=standard
 atmega644pa.name=Sanguino W/ ATmega644PA 16MHz
 
 atmega644pa.upload.maximum_size=63488
+atmega644pa.upload.maximum_data_size=4096
 
 atmega644pa.upload.protocol=stk500
 atmega644pa.upload.speed=57600
@@ -164,6 +171,7 @@ atmega644pa.build.variant=standard
 atmega644pa_8m.name=Sanguino W/ ATmega644PA 8MHz
 
 atmega644pa_8m.upload.maximum_size=63488
+atmega644pa_8m.upload.maximum_data_size=4096
 
 atmega644pa_8m.upload.protocol=stk500
 atmega644pa_8m.upload.speed=38400
@@ -187,6 +195,7 @@ atmega644pa_8m.build.variant=standard
 atmega1284.name=Sanguino W/ ATmega1284 16MHz
 
 atmega1284.upload.maximum_size=129024
+atmega1284.upload.maximum_data_size=16384
 
 atmega1284.upload.protocol=stk500
 atmega1284.upload.speed=57600
@@ -210,6 +219,7 @@ atmega1284.build.variant=standard
 atmega1284_8m.name=Sanguino W/ ATmega1284 8MHz
 
 atmega1284_8m.upload.maximum_size=129024
+atmega1284_8m.upload.maximum_data_size=16384
 
 atmega1284_8m.upload.protocol=stk500
 atmega1284_8m.upload.speed=38400
@@ -233,6 +243,7 @@ atmega1284_8m.build.variant=standard
 atmega1284p.name=Sanguino W/ ATmega1284P 16MHz
 
 atmega1284p.upload.maximum_size=129024
+atmega1284p.upload.maximum_data_size=16384
 
 atmega1284p.upload.protocol=stk500
 atmega1284p.upload.speed=57600
@@ -256,6 +267,7 @@ atmega1284p.build.variant=standard
 atmega1284p_8m.name=Sanguino W/ ATmega1284P 8MHz
 
 atmega1284p_8m.upload.maximum_size=129024
+atmega1284p_8m.upload.maximum_data_size=16384
 
 atmega1284p_8m.upload.protocol=stk500
 atmega1284p_8m.upload.speed=38400

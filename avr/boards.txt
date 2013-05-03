@@ -19,6 +19,7 @@ sanguino.build.variant=standard
 menu.cpu.sanguino.atmega644=ATmega644 (16 MHz)
 
 menu.cpu.sanguino.atmega644.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644.upload.maximum_data_size=4096
 menu.cpu.sanguino.atmega644.upload.speed=57600
 
 menu.cpu.sanguino.atmega644.bootloader.low_fuses=0xFF
@@ -33,6 +34,7 @@ menu.cpu.sanguino.atmega644.build.f_cpu=16000000L
 menu.cpu.sanguino.atmega644_8m=ATmega644 (8 MHz)
 
 menu.cpu.sanguino.atmega644_8m.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644_8m.upload.maximum_data_size=4096
 menu.cpu.sanguino.atmega644_8m.upload.speed=38400
 
 menu.cpu.sanguino.atmega644_8m.bootloader.low_fuses=0xFD
@@ -47,6 +49,7 @@ menu.cpu.sanguino.atmega644_8m.build.f_cpu=8000000L
 menu.cpu.sanguino.atmega644a=ATmega644A (16 MHz)
 
 menu.cpu.sanguino.atmega644a.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644a.upload.maximum_data_size=4096
 menu.cpu.sanguino.atmega644a.upload.speed=57600
 
 menu.cpu.sanguino.atmega644a.bootloader.low_fuses=0xFF
@@ -61,6 +64,7 @@ menu.cpu.sanguino.atmega644a.build.f_cpu=16000000L
 menu.cpu.sanguino.atmega644a_8m=ATmega644A (8 MHz)
 
 menu.cpu.sanguino.atmega644a_8m.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644a_8m.upload.maximum_data_size=4096
 menu.cpu.sanguino.atmega644a_8m.upload.speed=38400
 
 menu.cpu.sanguino.atmega644a_8m.bootloader.low_fuses=0xFD
@@ -75,6 +79,7 @@ menu.cpu.sanguino.atmega644a_8m.build.f_cpu=8000000L
 menu.cpu.sanguino.atmega644p=ATmega644P (16 MHz)
 
 menu.cpu.sanguino.atmega644p.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644p.upload.maximum_data_size=4096
 menu.cpu.sanguino.atmega644p.upload.speed=57600
 
 menu.cpu.sanguino.atmega644p.bootloader.low_fuses=0xFF
@@ -89,6 +94,7 @@ menu.cpu.sanguino.atmega644p.build.f_cpu=16000000L
 menu.cpu.sanguino.atmega644p_8m=ATmega644P (8 MHz)
 
 menu.cpu.sanguino.atmega644p_8m.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644p_8m.upload.maximum_data_size=4096
 menu.cpu.sanguino.atmega644p_8m.upload.speed=38400
 
 menu.cpu.sanguino.atmega644p_8m.bootloader.low_fuses=0xFD
@@ -103,6 +109,7 @@ menu.cpu.sanguino.atmega644p_8m.build.f_cpu=8000000L
 menu.cpu.sanguino.atmega644pa=ATmega644PA (16 MHz)
 
 menu.cpu.sanguino.atmega644pa.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644pa.upload.maximum_data_size=4096
 menu.cpu.sanguino.atmega644pa.upload.speed=57600
 
 menu.cpu.sanguino.atmega644pa.bootloader.low_fuses=0xFF
@@ -117,6 +124,7 @@ menu.cpu.sanguino.atmega644pa.build.f_cpu=16000000L
 menu.cpu.sanguino.atmega644pa_8m=ATmega644PA (8 MHz)
 
 menu.cpu.sanguino.atmega644pa_8m.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644pa_8m.upload.maximum_data_size=4096
 menu.cpu.sanguino.atmega644pa_8m.upload.speed=38400
 
 menu.cpu.sanguino.atmega644pa_8m.bootloader.low_fuses=0xFD
@@ -131,6 +139,7 @@ menu.cpu.sanguino.atmega644pa_8m.build.f_cpu=8000000L
 menu.cpu.sanguino.atmega1284=ATmega1284 (16 MHz)
 
 menu.cpu.sanguino.atmega1284.upload.maximum_size=129024
+menu.cpu.sanguino.atmega1284.upload.maximum_data_size=16384
 menu.cpu.sanguino.atmega1284.upload.speed=57600
 
 menu.cpu.sanguino.atmega1284.bootloader.low_fuses=0xFF
@@ -145,6 +154,7 @@ menu.cpu.sanguino.atmega1284.build.f_cpu=16000000L
 menu.cpu.sanguino.atmega1284_8m=ATmega1284 (8 MHz)
 
 menu.cpu.sanguino.atmega1284_8m.upload.maximum_size=129024
+menu.cpu.sanguino.atmega1284_8m.upload.maximum_data_size=16384
 menu.cpu.sanguino.atmega1284_8m.upload.speed=38400
 
 menu.cpu.sanguino.atmega1284_8m.bootloader.low_fuses=0xFD
@@ -159,6 +169,7 @@ menu.cpu.sanguino.atmega1284_8m.build.f_cpu=8000000L
 menu.cpu.sanguino.atmega1284p=ATmega1284P (16 MHz)
 
 menu.cpu.sanguino.atmega1284p.upload.maximum_size=129024
+menu.cpu.sanguino.atmega1284p.upload.maximum_data_size=16384
 menu.cpu.sanguino.atmega1284p.upload.speed=57600
 
 menu.cpu.sanguino.atmega1284p.bootloader.low_fuses=0xFF
@@ -173,6 +184,7 @@ menu.cpu.sanguino.atmega1284p.build.f_cpu=16000000L
 menu.cpu.sanguino.atmega1284p_8m=ATmega1284P (8 MHz)
 
 menu.cpu.sanguino.atmega1284p_8m.upload.maximum_size=129024
+menu.cpu.sanguino.atmega1284p_8m.upload.maximum_data_size=16384
 menu.cpu.sanguino.atmega1284p_8m.upload.speed=38400
 
 menu.cpu.sanguino.atmega1284p_8m.bootloader.low_fuses=0xFD
