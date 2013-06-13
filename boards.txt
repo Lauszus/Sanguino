@@ -19,8 +19,8 @@ atmega644.bootloader.lock_bits=0x0F
 atmega644.build.mcu=atmega644
 atmega644.build.f_cpu=16000000L
 atmega644.build.board=AVR_SANGUINO
-atmega644.build.core=arduino
-atmega644.build.variant=standard
+atmega644.build.core=sanguino
+atmega644.build.variant=sanguino
 
 ############################################################
 
@@ -43,8 +43,8 @@ atmega644_8m.bootloader.lock_bits=0x0F
 atmega644_8m.build.mcu=atmega644
 atmega644_8m.build.f_cpu=8000000L
 atmega644_8m.build.board=AVR_SANGUINO
-atmega644_8m.build.core=arduino
-atmega644_8m.build.variant=standard
+atmega644_8m.build.core=sanguino
+atmega644_8m.build.variant=sanguino
 
 ##############################################################
 
@@ -67,8 +67,8 @@ atmega644a.bootloader.lock_bits=0x0F
 atmega644a.build.mcu=atmega644
 atmega644a.build.f_cpu=16000000L
 atmega644a.build.board=AVR_SANGUINO
-atmega644a.build.core=arduino
-atmega644a.build.variant=standard
+atmega644a.build.core=sanguino
+atmega644a.build.variant=sanguino
 
 ##############################################################
 
@@ -91,8 +91,8 @@ atmega644a_8m.bootloader.lock_bits=0x0F
 atmega644a_8m.build.mcu=atmega644
 atmega644a_8m.build.f_cpu=8000000L
 atmega644a_8m.build.board=AVR_SANGUINO
-atmega644a_8m.build.core=arduino
-atmega644a_8m.build.variant=standard
+atmega644a_8m.build.core=sanguino
+atmega644a_8m.build.variant=sanguino
 
 ##############################################################
 
@@ -115,8 +115,8 @@ atmega644p.bootloader.lock_bits=0x0F
 atmega644p.build.mcu=atmega644p
 atmega644p.build.f_cpu=16000000L
 atmega644p.build.board=AVR_SANGUINO
-atmega644p.build.core=arduino
-atmega644p.build.variant=standard
+atmega644p.build.core=sanguino
+atmega644p.build.variant=sanguino
 
 ##############################################################
 
@@ -139,8 +139,8 @@ atmega644p_8m.bootloader.lock_bits=0x0F
 atmega644p_8m.build.mcu=atmega644p
 atmega644p_8m.build.f_cpu=8000000L
 atmega644p_8m.build.board=AVR_SANGUINO
-atmega644p_8m.build.core=arduino
-atmega644p_8m.build.variant=standard
+atmega644p_8m.build.core=sanguino
+atmega644p_8m.build.variant=sanguino
 
 ############################################################
 
@@ -163,8 +163,8 @@ atmega644pa.bootloader.lock_bits=0x0F
 atmega644pa.build.mcu=atmega644p
 atmega644pa.build.f_cpu=16000000L
 atmega644pa.build.board=AVR_SANGUINO
-atmega644pa.build.core=arduino
-atmega644pa.build.variant=standard
+atmega644pa.build.core=sanguino
+atmega644pa.build.variant=sanguino
 
 ############################################################
 
@@ -187,8 +187,8 @@ atmega644pa_8m.bootloader.lock_bits=0x0F
 atmega644pa_8m.build.mcu=atmega644p
 atmega644pa_8m.build.f_cpu=8000000L
 atmega644pa_8m.build.board=AVR_SANGUINO
-atmega644pa_8m.build.core=arduino
-atmega644pa_8m.build.variant=standard
+atmega644pa_8m.build.core=sanguino
+atmega644pa_8m.build.variant=sanguino
 
 ##############################################################
 
@@ -211,8 +211,8 @@ atmega1284.bootloader.lock_bits=0x0F
 atmega1284.build.mcu=atmega1284
 atmega1284.build.f_cpu=16000000L
 atmega1284.build.board=AVR_SANGUINO
-atmega1284.build.core=arduino
-atmega1284.build.variant=standard
+atmega1284.build.core=sanguino
+atmega1284.build.variant=sanguino
 
 ############################################################
 
@@ -235,8 +235,8 @@ atmega1284_8m.bootloader.lock_bits=0x0F
 atmega1284_8m.build.mcu=atmega1284
 atmega1284_8m.build.f_cpu=8000000L
 atmega1284_8m.build.board=AVR_SANGUINO
-atmega1284_8m.build.core=arduino
-atmega1284_8m.build.variant=standard
+atmega1284_8m.build.core=sanguino
+atmega1284_8m.build.variant=sanguino
 
 ##############################################################
 
@@ -259,8 +259,8 @@ atmega1284p.bootloader.lock_bits=0x0F
 atmega1284p.build.mcu=atmega1284p
 atmega1284p.build.f_cpu=16000000L
 atmega1284p.build.board=AVR_SANGUINO
-atmega1284p.build.core=arduino
-atmega1284p.build.variant=standard
+atmega1284p.build.core=sanguino
+atmega1284p.build.variant=sanguino
 
 ############################################################
 
@@ -283,5 +283,5 @@ atmega1284p_8m.bootloader.lock_bits=0x0F
 atmega1284p_8m.build.mcu=atmega1284p
 atmega1284p_8m.build.f_cpu=8000000L
 atmega1284p_8m.build.board=AVR_SANGUINO
-atmega1284p_8m.build.core=arduino
-atmega1284p_8m.build.variant=standard
+atmega1284p_8m.build.core=sanguino
+atmega1284p_8m.build.variant=sanguino
