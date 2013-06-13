@@ -242,17 +242,17 @@ atmega1284_8m.build.variant=sanguino
 
 atmega1284p.name=Sanguino W/ ATmega1284P 16MHz
 
-atmega1284p.upload.maximum_size=129024
+atmega1284p.upload.maximum_size=130048
 atmega1284p.upload.maximum_data_size=16384
 
-atmega1284p.upload.protocol=stk500
-atmega1284p.upload.speed=57600
-atmega1284p.bootloader.path=atmega
-atmega1284p.bootloader.file=ATmegaBOOT_168_atmega1284p.hex
+atmega1284p.upload.protocol=arduino
+atmega1284p.upload.speed=115200
+atmega1284p.bootloader.path=optiboot
+atmega1284p.bootloader.file=optiboot_atmega1284p.hex
 
 atmega1284p.bootloader.low_fuses=0xFF
-atmega1284p.bootloader.high_fuses=0x9C
-atmega1284p.bootloader.extended_fuses=0xFF
+atmega1284p.bootloader.high_fuses=0xDE
+atmega1284p.bootloader.extended_fuses=0xFD
 atmega1284p.bootloader.unlock_bits=0x3F
 atmega1284p.bootloader.lock_bits=0x0F
 
