@@ -208,7 +208,7 @@ atmega1284.bootloader.extended_fuses=0xFF
 atmega1284.bootloader.unlock_bits=0x3F
 atmega1284.bootloader.lock_bits=0x0F
 
-atmega1284.build.mcu=atmega1284
+atmega1284.build.mcu=atmega1284p
 atmega1284.build.f_cpu=16000000L
 atmega1284.build.board=AVR_SANGUINO
 atmega1284.build.core=sanguino
@@ -232,7 +232,7 @@ atmega1284_8m.bootloader.extended_fuses=0xFF
 atmega1284_8m.bootloader.unlock_bits=0x3F
 atmega1284_8m.bootloader.lock_bits=0x0F
 
-atmega1284_8m.build.mcu=atmega1284
+atmega1284_8m.build.mcu=atmega1284p
 atmega1284_8m.build.f_cpu=8000000L
 atmega1284_8m.build.board=AVR_SANGUINO
 atmega1284_8m.build.core=sanguino

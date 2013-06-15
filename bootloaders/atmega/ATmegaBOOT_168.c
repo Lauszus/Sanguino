@@ -168,7 +168,7 @@
 
 #elif defined __AVR_ATmega1284__
 #define SIG2	0x97
-#define SIG3	0x06
+#define SIG3	0x05 // Should really be 0x06
 #define PAGE_SIZE	0x080U   //128 words
 
 #elif defined __AVR_ATmega1284P__
