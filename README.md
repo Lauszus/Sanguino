@@ -18,5 +18,9 @@ Now move the Sanguino directory inside that folder. The structure would look lik
 			* README.md
 			* boards.txt
 
+Since the ATmega1284 is not supported by Avrdude. You will have to burn the bootloader manually from the command line. See this file for help: [ATmega1284.md](bootloaders/optiboot/ATmega1284.md).
+
+Also check out the following site for more information: <http://blog.stevemarple.co.uk/2013/01/how-to-use-atmel-atmega1284-non-p.html>.
+
 For more information see the following site: [http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware](http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware)
 or send me an email at <a href="mailto:kristianl@tkjelectronics.dk?Subject=Sanguino">kristianl@tkjelectronics.dk</a>.

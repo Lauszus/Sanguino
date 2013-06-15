@@ -194,17 +194,17 @@ atmega644pa_8m.build.variant=sanguino
 
 atmega1284.name=Sanguino W/ ATmega1284 16MHz
 
-atmega1284.upload.maximum_size=129024
+atmega1284.upload.maximum_size=130048
 atmega1284.upload.maximum_data_size=16384
 
-atmega1284.upload.protocol=stk500
-atmega1284.upload.speed=57600
-atmega1284.bootloader.path=atmega
-atmega1284.bootloader.file=ATmegaBOOT_168_atmega1284.hex
+atmega1284.upload.protocol=arduino
+atmega1284.upload.speed=115200
+atmega1284.bootloader.path=optiboot
+atmega1284.bootloader.file=optiboot_atmega1284p.hex
 
 atmega1284.bootloader.low_fuses=0xFF
-atmega1284.bootloader.high_fuses=0x9C
-atmega1284.bootloader.extended_fuses=0xFF
+atmega1284.bootloader.high_fuses=0xDE
+atmega1284.bootloader.extended_fuses=0xFD
 atmega1284.bootloader.unlock_bits=0x3F
 atmega1284.bootloader.lock_bits=0x0F
 

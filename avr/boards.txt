@@ -138,14 +138,14 @@ menu.cpu.sanguino.atmega644pa_8m.build.f_cpu=8000000L
 ## Sanguino W/ ATmega1284 16MHz
 menu.cpu.sanguino.atmega1284=ATmega1284 (16 MHz)
 
-menu.cpu.sanguino.atmega1284.upload.maximum_size=129024
+menu.cpu.sanguino.atmega1284.upload.maximum_size=130048
 menu.cpu.sanguino.atmega1284.upload.maximum_data_size=16384
-menu.cpu.sanguino.atmega1284.upload.speed=57600
+menu.cpu.sanguino.atmega1284.upload.speed=115200
 
 menu.cpu.sanguino.atmega1284.bootloader.low_fuses=0xFF
-menu.cpu.sanguino.atmega1284.bootloader.high_fuses=0x9C
-menu.cpu.sanguino.atmega1284.bootloader.extended_fuses=0xFF
-menu.cpu.sanguino.atmega1284.bootloader.file=atmega/ATmegaBOOT_168_atmega1284.hex
+menu.cpu.sanguino.atmega1284.bootloader.high_fuses=0xDE
+menu.cpu.sanguino.atmega1284.bootloader.extended_fuses=0xFD
+menu.cpu.sanguino.atmega1284.bootloader.file=optiboot/optiboot_atmega1284p.hex
 
 menu.cpu.sanguino.atmega1284.build.mcu=atmega1284p
 menu.cpu.sanguino.atmega1284.build.f_cpu=16000000L
