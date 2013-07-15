@@ -78,7 +78,7 @@ int main(void) {
    1fc22:	86 e0       	ldi	r24, 0x06	; 6
    1fc24:	80 93 c2 00 	sts	0x00C2, r24
   UART_SRL = (uint8_t)( (F_CPU + BAUD_RATE * 4L) / (BAUD_RATE * 8L) - 1 );
-   1fc28:	80 e1       	ldi	r24, 0x10	; 16
+   1fc28:	8a e0       	ldi	r24, 0x0A	; 10
    1fc2a:	80 93 c4 00 	sts	0x00C4, r24
 #endif
 #endif
@@ -91,7 +91,7 @@ int main(void) {
 #if (LED_START_FLASHES > 0) || defined(LED_DATA_FLASH)
   /* Set LED pin as output */
   LED_DDR |= _BV(LED);
-   1fc32:	20 9a       	sbi	0x04, 0	; 4
+   1fc32:	24 9a       	sbi	0x04, 4	; 4
    1fc34:	26 e0       	ldi	r18, 0x06	; 6
 }
 
@@ -99,8 +99,8 @@ int main(void) {
 void flash_led(uint8_t count) {
   do {
     TCNT1 = -(F_CPU/(1024*16));
-   1fc36:	80 e3       	ldi	r24, 0x30	; 48
-   1fc38:	9c ef       	ldi	r25, 0xFC	; 252
+   1fc36:	8e e9       	ldi	r24, 0x9E	; 158
+   1fc38:	9d ef       	ldi	r25, 0xFD	; 253
     TIFR1 = _BV(TOV1);
    1fc3a:	31 e0       	ldi	r19, 0x01	; 1
 }
@@ -120,7 +120,7 @@ void flash_led(uint8_t count) {
     LED_PORT ^= _BV(LED);
 #else
     LED_PIN |= _BV(LED);
-   1fc4a:	18 9a       	sbi	0x03, 0	; 3
+   1fc4a:	1c 9a       	sbi	0x03, 4	; 3
 }
 #endif
 

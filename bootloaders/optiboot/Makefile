@@ -258,6 +258,15 @@ atmega328_isp: LFUSE ?= FF
 atmega328_isp: EFUSE ?= FD
 atmega328_isp: isp
 
+atmega644: TARGET = atmega644
+atmega644: MCU_TARGET = atmega644
+atmega644: CFLAGS += $(COMMON_OPTIONS) -DBIGBOOT $(LED_CMD)
+atmega644: AVR_FREQ ?= 16000000L
+atmega644: LDSECTIONS  = -Wl,--section-start=.text=0xfc00 -Wl,--section-start=.version=0xfffe
+atmega644: CFLAGS += $(UARTCMD)
+atmega644: $(PROGRAM)_atmega644.hex
+atmega644: $(PROGRAM)_atmega644.lst
+
 atmega644p: TARGET = atmega644p
 atmega644p: MCU_TARGET = atmega644p
 atmega644p: CFLAGS += $(COMMON_OPTIONS) -DBIGBOOT $(LED_CMD)
@@ -481,6 +490,37 @@ bobuino_isp: LFUSE ?= F7
 # 2.7V brownout
 bobuino_isp: EFUSE ?= FD
 bobuino_isp: isp
+
+# Balanduino bootloaders
+balanduino644: TARGET = $@
+balanduino644: CHIP = atmega644
+balanduino644:
+	$(MAKE) $(CHIP) AVR_FREQ=8000000L LED=B4 BAUD_RATE=57600
+	mv $(PROGRAM)_$(CHIP).hex $(PROGRAM)_$(TARGET).hex
+	mv $(PROGRAM)_$(CHIP).lst $(PROGRAM)_$(TARGET).lst
+
+balanduino644_isp: balanduino644
+balanduino644_isp: TARGET = balanduino644
+balanduino644_isp: MCU_TARGET = atmega644
+balanduino644_isp: HFUSE ?= D6
+balanduino644_isp: LFUSE ?= FD
+balanduino644_isp: EFUSE ?= FD
+balanduino644_isp: isp
+
+balanduino: TARGET = $@
+balanduino: CHIP = atmega1284p
+balanduino:
+	$(MAKE) $(CHIP) AVR_FREQ=10000000L LED=B4
+	mv $(PROGRAM)_$(CHIP).hex $(PROGRAM)_$(TARGET).hex
+	mv $(PROGRAM)_$(CHIP).lst $(PROGRAM)_$(TARGET).lst
+
+balanduino_isp: balanduino
+balanduino_isp: TARGET = balanduino
+balanduino_isp: MCU_TARGET = atmega1284p
+balanduino_isp: HFUSE ?= D6
+balanduino_isp: LFUSE ?= FF
+balanduino_isp: EFUSE ?= FD
+balanduino_isp: isp
 
 # MEGA1280 Board (this is different from the atmega1280 chip platform)
 # Mega has a minimum boot size of 1024 bytes, so enable extra functions
