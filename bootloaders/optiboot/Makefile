@@ -503,7 +503,7 @@ balanduino644_isp: balanduino644
 balanduino644_isp: TARGET = balanduino644
 balanduino644_isp: MCU_TARGET = atmega644
 balanduino644_isp: HFUSE ?= D6
-balanduino644_isp: LFUSE ?= FD
+balanduino644_isp: LFUSE ?= FF
 balanduino644_isp: EFUSE ?= FD
 balanduino644_isp: isp
 
