@@ -1,14 +1,20 @@
+Forked from official Optiboot repo: <https://code.google.com/p/optiboot/>.
+
+# Original text
+
+------------------------------------------------------------
+
 This directory contains the Optiboot small bootloader for AVR
 microcontrollers, somewhat modified specifically for the Arduino
 environment.
 
-Optiboot is more fully described here: http://code.google.com/p/optiboot/
+Optiboot is more fully described here: <http://code.google.com/p/optiboot/>
 and is the work of Peter Knight (aka Cathedrow), building on work of Jason P
 Kyle, Spiff, and Ladyada.  Arduino-specific modification are by Bill
 Westfield (aka WestfW)
 
 Arduino-specific issues are tracked as part of the Arduino project
-at http://code.google.com/p/arduino
+at <http://code.google.com/p/arduino>
 
 
 ------------------------------------------------------------
@@ -30,10 +36,10 @@ the Arduino IDE.)
 Building Optiboot in the Arduino IDE Install.
 
 Work in the .../hardware/arduino/bootloaders/optiboot/ and use the
-"omake <targets>" command, which just generates a command that uses
+"omake &lt;targets&gt;" command, which just generates a command that uses
 the arduino-included "make" utility with a command like:
-    make OS=windows ENV=arduino <targets>
-or  make OS=macosx ENV=arduino <targets>
+    make OS=windows ENV=arduino &lt;targets&gt;
+or  make OS=macosx ENV=arduino &lt;targets&gt;
 On windows, this assumes you're using the windows command shell.  If
 you're using a cygwin or mingw shell, or have one of those in your
 path, the build will probably break due to slash vs backslash issues.
@@ -51,14 +57,14 @@ have "make" installed somewhere in your path.
 Build the Arduino source ("ant build") to unpack the tools into the
 expected directory.
 Work in Arduino/hardware/arduino/bootloaders/optiboot and use
-    make OS=windows ENV=arduinodev <targets>
-or  make OS=macosx ENV=arduinodev <targets>
+    make OS=windows ENV=arduinodev &lt;targets&gt;
+or  make OS=macosx ENV=arduinodev &lt;targets&gt;
 
 
-Programming Chips Using the _isp Targets
+Programming Chips Using the \_isp Targets
 
 The CPU targets have corresponding ISP targets that will actuall
-program the bootloader into a chip. "atmega328_isp" for the atmega328,
+program the bootloader into a chip. "atmega328\_isp" for the atmega328,
 for example.  These will set the fuses and lock bits as appropriate as
 well as uploading the bootloader code.
 
@@ -66,7 +72,7 @@ ISP Targets in Version 5.0 and later:
 
 The isp targets are now built using a separate "Makefile.isp" makefile,
 which should make modification easier and more obvious.  This also fixes
-the atmega8_isp target problem mentioned below.  The default
+the atmega8\_isp target problem mentioned below.  The default
 configuration assumes an ArduinoISP setup, but you will probably need to
 update at least the serial port, since those are different for each
 Arduino board and/or system/
@@ -78,10 +84,11 @@ The older makefiles default to using a USB programmer, but you can use a
 serial programmer like ArduinoISP by changing the appropriate variables
 when you invoke make:
 
-   make ISPTOOL=stk500v1 ISPPORT=/dev/tty.usbserial-A20e1eAN  \
-        ISPSPEED=-b19200 atmega328_isp
+```
+make ISPTOOL=stk500v1 ISPPORT=/dev/tty.usbserial-A20e1eAN ISPSPEED=-b19200 atmega328_isp
+```
 
-The "atmega8_isp" target does not currently work, because the mega8
+The "atmega8\_isp" target does not currently work, because the mega8
 doesn't have the "extended" fuse that the generic ISP target wants to
 pass on to avrdude.  You'll need to run avrdude manually.
 
