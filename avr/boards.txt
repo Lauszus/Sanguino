@@ -12,7 +12,7 @@ sanguino.bootloader.unlock_bits=0x3F
 sanguino.bootloader.lock_bits=0x0F
 
 sanguino.build.board=AVR_SANGUINO
-sanguino.build.core=sanguino
+sanguino.build.core=arduino:arduino
 sanguino.build.variant=sanguino
 
 ## Sanguino W/ ATmega644 16MHz
