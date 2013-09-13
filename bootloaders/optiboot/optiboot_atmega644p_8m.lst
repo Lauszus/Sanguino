@@ -1,5 +1,5 @@
 
-optiboot_atmega644.elf:     file format elf32-avr
+optiboot_atmega644p.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -93,7 +93,7 @@ int main(void) {
 #if (LED_START_FLASHES > 0) || defined(LED_DATA_FLASH)
   /* Set LED pin as output */
   LED_DDR |= _BV(LED);
-    fc32:	24 9a       	sbi	0x04, 4	; 4
+    fc32:	20 9a       	sbi	0x04, 0	; 4
     fc34:	26 e0       	ldi	r18, 0x06	; 6
 }
 
@@ -122,7 +122,7 @@ void flash_led(uint8_t count) {
     LED_PORT ^= _BV(LED);
 #else
     LED_PIN |= _BV(LED);
-    fc4a:	1c 9a       	sbi	0x03, 4	; 3
+    fc4a:	18 9a       	sbi	0x03, 0	; 3
 }
 #endif
 
@@ -431,7 +431,7 @@ int main(void) {
     fd5a:	86 e9       	ldi	r24, 0x96	; 150
     fd5c:	0a d0       	rcall	.+20     	; 0xfd72 <putch>
       putch(SIGNATURE_2);
-    fd5e:	89 e0       	ldi	r24, 0x09	; 9
+    fd5e:	8a e0       	ldi	r24, 0x0A	; 10
     fd60:	91 cf       	rjmp	.-222    	; 0xfc84 <main+0x84>
     }
     else if (ch == STK_LEAVE_PROGMODE) { /* 'Q' */
