@@ -192,55 +192,7 @@ atmega644pa_8m.build.variant=sanguino
 
 ##############################################################
 
-atmega1284.name=Sanguino W/ ATmega1284 16MHz
-
-atmega1284.upload.maximum_size=130048
-atmega1284.upload.maximum_data_size=16384
-
-atmega1284.upload.protocol=arduino
-atmega1284.upload.speed=115200
-atmega1284.bootloader.path=optiboot
-atmega1284.bootloader.file=optiboot_atmega1284p.hex
-
-atmega1284.bootloader.low_fuses=0xFF
-atmega1284.bootloader.high_fuses=0xDE
-atmega1284.bootloader.extended_fuses=0xFD
-atmega1284.bootloader.unlock_bits=0x3F
-atmega1284.bootloader.lock_bits=0x0F
-
-atmega1284.build.mcu=atmega1284p
-atmega1284.build.f_cpu=16000000L
-atmega1284.build.board=AVR_SANGUINO
-atmega1284.build.core=sanguino
-atmega1284.build.variant=sanguino
-
-############################################################
-
-atmega1284_8m.name=Sanguino W/ ATmega1284 8MHz
-
-atmega1284_8m.upload.maximum_size=129024
-atmega1284_8m.upload.maximum_data_size=16384
-
-atmega1284_8m.upload.protocol=stk500
-atmega1284_8m.upload.speed=38400
-atmega1284_8m.bootloader.path=atmega
-atmega1284_8m.bootloader.file=ATmegaBOOT_168_atmega1284_8m.hex
-
-atmega1284_8m.bootloader.low_fuses=0xFD
-atmega1284_8m.bootloader.high_fuses=0x9C
-atmega1284_8m.bootloader.extended_fuses=0xFF
-atmega1284_8m.bootloader.unlock_bits=0x3F
-atmega1284_8m.bootloader.lock_bits=0x0F
-
-atmega1284_8m.build.mcu=atmega1284p
-atmega1284_8m.build.f_cpu=8000000L
-atmega1284_8m.build.board=AVR_SANGUINO
-atmega1284_8m.build.core=sanguino
-atmega1284_8m.build.variant=sanguino
-
-##############################################################
-
-atmega1284p.name=Sanguino W/ ATmega1284P 16MHz
+atmega1284p.name=Sanguino W/ ATmega1284 or ATmega1284P (16MHz)
 
 atmega1284p.upload.maximum_size=130048
 atmega1284p.upload.maximum_data_size=16384
@@ -264,19 +216,19 @@ atmega1284p.build.variant=sanguino
 
 ############################################################
 
-atmega1284p_8m.name=Sanguino W/ ATmega1284P 8MHz
+atmega1284p_8m.name=Sanguino W/ ATmega1284 or ATmega1284P (8MHz)
 
-atmega1284p_8m.upload.maximum_size=129024
+atmega1284p_8m.upload.maximum_size=130048
 atmega1284p_8m.upload.maximum_data_size=16384
 
-atmega1284p_8m.upload.protocol=stk500
-atmega1284p_8m.upload.speed=38400
-atmega1284p_8m.bootloader.path=atmega
-atmega1284p_8m.bootloader.file=ATmegaBOOT_168_atmega1284p_8m.hex
+atmega1284p_8m.upload.protocol=arduino
+atmega1284p_8m.upload.speed=57600
+atmega1284p_8m.bootloader.path=optiboot
+atmega1284p_8m.bootloader.file=optiboot_atmega1284p_8m.hex
 
-atmega1284p_8m.bootloader.low_fuses=0xFD
-atmega1284p_8m.bootloader.high_fuses=0x9C
-atmega1284p_8m.bootloader.extended_fuses=0xFF
+atmega1284p_8m.bootloader.low_fuses=0xFF
+atmega1284p_8m.bootloader.high_fuses=0xDE
+atmega1284p_8m.bootloader.extended_fuses=0xFD
 atmega1284p_8m.bootloader.unlock_bits=0x3F
 atmega1284p_8m.bootloader.lock_bits=0x0F
 

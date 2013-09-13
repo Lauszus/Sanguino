@@ -267,6 +267,13 @@ atmega644: CFLAGS += $(UARTCMD)
 atmega644: $(PROGRAM)_atmega644.hex
 atmega644: $(PROGRAM)_atmega644.lst
 
+atmega644_8m: TARGET = $@
+atmega644_8m: CHIP = atmega644
+atmega644_8m:
+	$(MAKE) $(CHIP) AVR_FREQ=8000000L BAUD_RATE=57600
+	mv $(PROGRAM)_$(CHIP).hex $(PROGRAM)_$(TARGET).hex
+	mv $(PROGRAM)_$(CHIP).lst $(PROGRAM)_$(TARGET).lst
+
 atmega644p: TARGET = atmega644p
 atmega644p: MCU_TARGET = atmega644p
 atmega644p: CFLAGS += $(COMMON_OPTIONS) -DBIGBOOT $(LED_CMD)
@@ -276,27 +283,53 @@ atmega644p: CFLAGS += $(UARTCMD)
 atmega644p: $(PROGRAM)_atmega644p.hex
 atmega644p: $(PROGRAM)_atmega644p.lst
 
-atmega1284: TARGET = atmega1284p
-atmega1284: MCU_TARGET = atmega1284p
-atmega1284: CFLAGS += $(COMMON_OPTIONS) -DBIGBOOT $(LED_CMD)
-atmega1284: AVR_FREQ ?= 16000000L
-atmega1284: LDSECTIONS  = -Wl,--section-start=.text=0x1fc00 -Wl,--section-start=.version=0x1fffe
-atmega1284: CFLAGS += $(UARTCMD)
-atmega1284: $(PROGRAM)_atmega1284p.hex
-atmega1284: $(PROGRAM)_atmega1284p.lst
+atmega644p_8m: TARGET = $@
+atmega644p_8m: CHIP = atmega644p
+atmega644p_8m:
+	$(MAKE) $(CHIP) AVR_FREQ=8000000L BAUD_RATE=57600
+	mv $(PROGRAM)_$(CHIP).hex $(PROGRAM)_$(TARGET).hex
+	mv $(PROGRAM)_$(CHIP).lst $(PROGRAM)_$(TARGET).lst
 
-atmega1284p: atmega1284
+atmega1284p: TARGET = atmega1284p
+atmega1284p: MCU_TARGET = atmega1284p
+atmega1284p: CFLAGS += $(COMMON_OPTIONS) -DBIGBOOT $(LED_CMD)
+atmega1284p: AVR_FREQ ?= 16000000L
+atmega1284p: LDSECTIONS  = -Wl,--section-start=.text=0x1fc00 -Wl,--section-start=.version=0x1fffe
+atmega1284p: CFLAGS += $(UARTCMD)
+atmega1284p: $(PROGRAM)_atmega1284p.hex
+atmega1284p: $(PROGRAM)_atmega1284p.lst
 
-atmega1284_isp: atmega1284
-atmega1284_isp: TARGET = atmega1284p
-atmega1284_isp: MCU_TARGET = atmega1284p
-# 1024 byte boot
-atmega1284_isp: HFUSE ?= DE
+atmega1284p_8m: TARGET = $@
+atmega1284p_8m: CHIP = atmega1284p
+atmega1284p_8m:
+	$(MAKE) $(CHIP) AVR_FREQ=8000000L BAUD_RATE=57600
+	mv $(PROGRAM)_$(CHIP).hex $(PROGRAM)_$(TARGET).hex
+	mv $(PROGRAM)_$(CHIP).lst $(PROGRAM)_$(TARGET).lst
+
+atmega1284: atmega1284p
+atmega1284_8m: atmega1284p_8m
+
+atmega1284p_isp: atmega1284p
+atmega1284p_isp: TARGET = atmega1284p
+atmega1284p_isp: MCU_TARGET = atmega1284p
+# 512 byte boot
+atmega1284p_isp: HFUSE ?= DE
 # Full Swing xtal (16MHz) 16KCK/14CK+65ms
-atmega1284_isp: LFUSE ?= F7
+atmega1284p_isp: LFUSE ?= FF
 # 2.7V brownout
-atmega1284_isp: EFUSE ?= FD
-atmega1284_isp: isp
+atmega1284p_isp: EFUSE ?= FD
+atmega1284p_isp: isp
+
+atmega1284p_8m_isp: atmega1284p_8m
+atmega1284p_8m_isp: TARGET = atmega1284p_8m
+atmega1284p_8m_isp: MCU_TARGET = atmega1284p
+# 512 byte boot
+atmega1284p_8m_isp: HFUSE ?= DE
+# Full Swing xtal (16MHz) 16KCK/14CK+65ms
+atmega1284p_8m_isp: LFUSE ?= FF
+# 2.7V brownout
+atmega1284p_8m_isp: EFUSE ?= FD
+atmega1284p_8m_isp: isp
 
 #Atmega1280
 atmega1280: MCU_TARGET = atmega1280
