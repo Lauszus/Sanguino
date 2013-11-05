@@ -26,7 +26,7 @@
   11/25/11  - ryan@ryanmsutton.com - Add pins for Sanguino 644P and 1284P
   07/15/12  - ryan@ryanmsutton.com - Updated for arduino0101
 
-  Some improvements by Kristian Lauszus, kristianl@tkjelectronics.dk
+  Improvements by Kristian Lauszus, kristianl@tkjelectronics.dk
 */
 
 #ifndef Pins_Arduino_h
@@ -82,31 +82,32 @@ static const uint8_t A7 = 24;
 #define NUM_ANALOG_INPUTS           8
 
 #define analogInputToDigitalPin(p)  ((p < 8) ? 31 - (p): -1)
+#define analogPinToChannel(p)       ((p < 8) ? (p) : 31 - (p))
 
 #define digitalPinHasPWM(p)         ((p) == 3 || (p) == 4 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15 )
 
-#define digitalPinToPCICR(p)    ( (((p) >= 0) && ((p) <= 31)) ? (&PCICR) : ((uint8_t *)0) )
+#define digitalPinToPCICR(p)        ( (((p) >= 0) && ((p) <= 31)) ? (&PCICR) : ((uint8_t *)0) )
 
-#define digitalPinToPCICRbit(p) ( (((p) >= 24) && ((p) <= 31)) ? 0 : \
-                                ( (((p) >=  0) && ((p) <=  7)) ? 1 : \
-                                ( (((p) >= 16) && ((p) <= 23)) ? 2 : \
-                                ( (((p) >=  8) && ((p) <= 15)) ? 3 : \
-                                0 ) ) ) )
+#define digitalPinToPCICRbit(p)     ( (((p) >= 24) && ((p) <= 31)) ? 0 : \
+                                    ( (((p) >=  0) && ((p) <=  7)) ? 1 : \
+                                    ( (((p) >= 16) && ((p) <= 23)) ? 2 : \
+                                    ( (((p) >=  8) && ((p) <= 15)) ? 3 : \
+                                    0 ) ) ) )
 
-#define digitalPinToPCMSK(p)    ( (((p) >= 24) && ((p) <= 31)) ? (&PCMSK0) : \
-                                ( (((p) >=  0) && ((p) <=  7)) ? (&PCMSK1) : \
-                                ( (((p) >= 16) && ((p) <= 23)) ? (&PCMSK2) : \
-                                ( (((p) >=  8) && ((p) <= 15)) ? (&PCMSK3) : \
-                                ((uint8_t *)0) ) ) ) )
+#define digitalPinToPCMSK(p)        ( (((p) >= 24) && ((p) <= 31)) ? (&PCMSK0) : \
+                                    ( (((p) >=  0) && ((p) <=  7)) ? (&PCMSK1) : \
+                                    ( (((p) >= 16) && ((p) <= 23)) ? (&PCMSK2) : \
+                                    ( (((p) >=  8) && ((p) <= 15)) ? (&PCMSK3) : \
+                                    ((uint8_t *)0) ) ) ) )
 
 
-#define digitalPinToPCMSKbit(p) ( (((p) >= 24) && ((p) <= 31)) ? (31 - (p)) : \
-                                ( (((p) >=  0) && ((p) <=  7)) ? (p) : \
-                                ( (((p) >= 16) && ((p) <= 23)) ? ((p) - 16) : \
-                                ( (((p) >=  8) && ((p) <= 15)) ? ((p) - 8) : \
-                                0 ) ) ) )
+#define digitalPinToPCMSKbit(p)     ( (((p) >= 24) && ((p) <= 31)) ? (31 - (p)) : \
+                                    ( (((p) >=  0) && ((p) <=  7)) ? (p) : \
+                                    ( (((p) >= 16) && ((p) <= 23)) ? ((p) - 16) : \
+                                    ( (((p) >=  8) && ((p) <= 15)) ? ((p) - 8) : \
+                                    0 ) ) ) )
 
-#define digitalPinToInterrupt(p) ((p) == 10 ? 0 : ((p) == 11 ? 1 : ((p) == 2 ? 2 : NOT_AN_INTERRUPT)))
+#define digitalPinToInterrupt(p)    ((p) == 10 ? 0 : ((p) == 11 ? 1 : ((p) == 2 ? 2 : NOT_AN_INTERRUPT)))
 
 #ifdef ARDUINO_MAIN
 // these arrays map port names (e.g. port B) to the
