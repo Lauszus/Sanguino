@@ -13,7 +13,6 @@ Now move the Sanguino directory inside that folder. The structure would look lik
 		* Sanguino/
 			* avr/
 			* bootloaders/
-			* cores/
 			* variants/
 			* README.md
 			* boards.txt
