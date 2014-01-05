@@ -1,0 +1,31 @@
+#!/bin/bash
+make clean
+#
+#  buildable platforms of somewhat questionable support level
+#make lilypad
+#make pro8
+#make pro16
+#make pro20
+#make atmega328_pro8
+#make sanguino
+#make mega
+#make atmega88
+#make luminet
+#make diecimila
+#
+# The "big three" standard bootloaders.
+# These need to be built AFTER the platforms, or they'll get removed
+#make atmega8
+#make atmega168
+#make atmega328
+
+make balanduino644
+make balanduino
+
+make atmega644_8m
+make atmega644p_8m
+make atmega1284p_8m
+
+make atmega644
+make atmega644p
+make atmega1284p

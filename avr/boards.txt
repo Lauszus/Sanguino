@@ -4,10 +4,10 @@ menu.cpu=Processor
 
 sanguino.name=Sanguino
 
-sanguino.upload.tool=avrdude
+sanguino.upload.tool=arduino:avrdude
 sanguino.upload.protocol=arduino
 
-sanguino.bootloader.tool=avrdude
+sanguino.bootloader.tool=arduino:avrdude
 sanguino.bootloader.low_fuses=0xFF
 sanguino.bootloader.high_fuses=0xDE
 sanguino.bootloader.extended_fuses=0xFD
