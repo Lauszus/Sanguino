@@ -34,24 +34,24 @@
 
 #include <avr/pgmspace.h>
 
-#define SS   4
-#define MOSI 5
-#define MISO 6
-#define SCK  7
+const static uint8_t SS   = 4;
+const static uint8_t MOSI = 5;
+const static uint8_t MISO = 6;
+const static uint8_t SCK  = 7;
 
-#define SDA 17
-#define SCL 16
+static const uint8_t SDA = 17;
+static const uint8_t SCL = 16;
 
 #define LED_BUILTIN 0
 
-#define A0 31
-#define A1 30
-#define A2 29
-#define A3 28
-#define A4 27
-#define A5 26
-#define A6 25
-#define A7 24
+static const uint8_t A0 = 31;
+static const uint8_t A1 = 30;
+static const uint8_t A2 = 29;
+static const uint8_t A3 = 28;
+static const uint8_t A4 = 27;
+static const uint8_t A5 = 26;
+static const uint8_t A6 = 25;
+static const uint8_t A7 = 24;
 
 // ATMEL ATMEGA644/ATMEGA1284 / SANGUINO
 //
