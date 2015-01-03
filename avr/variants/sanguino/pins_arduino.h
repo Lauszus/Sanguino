@@ -263,7 +263,10 @@ const uint8_t PROGMEM digital_pin_to_timer_PGM[] =
 
 #define SERIAL_PORT_MONITOR         Serial
 #define SERIAL_PORT_HARDWARE        Serial
-#define SERIAL_PORT_HARDWARE1       Serial1
-#define SERIAL_PORT_HARDWARE_OPEN   Serial1
+
+#if defined(UBRR1H)
+    #define SERIAL_PORT_HARDWARE1       Serial1
+    #define SERIAL_PORT_HARDWARE_OPEN   Serial1
+#endif
 
 #endif
