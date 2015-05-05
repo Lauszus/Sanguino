@@ -19,8 +19,8 @@
           },
           "url": "https://github.com/Lauszus/Sanguino/releases/download/1.0.0/Sanguino.zip",
           "archiveFileName": "Sanguino.zip",
-          "checksum": "SHA-256:e02cab662f2427a2978cb912260da657101018a5f61c2fa0570cb5e8a120bd62",
-          "size": "92828",
+          "checksum": "SHA-256:1bfe7707894907a2792884fc726e1fe9251842fac75eaf5ef451bba0c18cbb4e",
+          "size": "92824",
           "boards": [
             {"name": "Sanguino"}
           ],
