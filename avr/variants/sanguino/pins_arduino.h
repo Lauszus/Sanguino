@@ -34,10 +34,10 @@
 
 #include <avr/pgmspace.h>
 
-const static uint8_t SS   = 4;
-const static uint8_t MOSI = 5;
-const static uint8_t MISO = 6;
-const static uint8_t SCK  = 7;
+static const uint8_t SS   = 4;
+static const uint8_t MOSI = 5;
+static const uint8_t MISO = 6;
+static const uint8_t SCK  = 7;
 
 static const uint8_t SDA = 17;
 static const uint8_t SCL = 16;
