@@ -1,6 +1,6 @@
 ############################################################
 
-atmega644.name=Sanguino W/ ATmega644 or ATmega644A (16 MHz)
+atmega644.name=Sanguino W/ ATmega644 (16 MHz)
 
 atmega644.upload.maximum_size=64512
 atmega644.upload.maximum_data_size=4096
@@ -24,7 +24,7 @@ atmega644.build.variant=sanguino
 
 ############################################################
 
-atmega644_8m.name=Sanguino W/ ATmega644 or ATmega644A (8 MHz)
+atmega644_8m.name=Sanguino W/ ATmega644 (8 MHz)
 
 atmega644_8m.upload.maximum_size=64512
 atmega644_8m.upload.maximum_data_size=4096
@@ -45,6 +45,54 @@ atmega644_8m.build.f_cpu=8000000L
 atmega644_8m.build.board=AVR_SANGUINO
 atmega644_8m.build.core=arduino:arduino
 atmega644_8m.build.variant=sanguino
+
+############################################################
+
+atmega644a.name=Sanguino W/ ATmega644A (16 MHz)
+
+atmega644a.upload.maximum_size=64512
+atmega644a.upload.maximum_data_size=4096
+
+atmega644a.upload.protocol=arduino
+atmega644a.upload.speed=115200
+atmega644a.bootloader.path=optiboot
+atmega644a.bootloader.file=optiboot_atmega644.hex
+
+atmega644a.bootloader.low_fuses=0xFF
+atmega644a.bootloader.high_fuses=0xDE
+atmega644a.bootloader.extended_fuses=0xFD
+atmega644a.bootloader.unlock_bits=0x3F
+atmega644a.bootloader.lock_bits=0x0F
+
+atmega644a.build.mcu=atmega644a
+atmega644a.build.f_cpu=16000000L
+atmega644a.build.board=AVR_SANGUINO
+atmega644a.build.core=arduino:arduino
+atmega644a.build.variant=sanguino
+
+############################################################
+
+atmega644a_8m.name=Sanguino W/ ATmega644A (8 MHz)
+
+atmega644a_8m.upload.maximum_size=64512
+atmega644a_8m.upload.maximum_data_size=4096
+
+atmega644a_8m.upload.protocol=arduino
+atmega644a_8m.upload.speed=57600
+atmega644a_8m.bootloader.path=optiboot
+atmega644a_8m.bootloader.file=optiboot_atmega644_8m.hex
+
+atmega644a_8m.bootloader.low_fuses=0xFF
+atmega644a_8m.bootloader.high_fuses=0xDE
+atmega644a_8m.bootloader.extended_fuses=0xFD
+atmega644a_8m.bootloader.unlock_bits=0x3F
+atmega644a_8m.bootloader.lock_bits=0x0F
+
+atmega644a_8m.build.mcu=atmega644a
+atmega644a_8m.build.f_cpu=8000000L
+atmega644a_8m.build.board=AVR_SANGUINO
+atmega644a_8m.build.core=arduino:arduino
+atmega644a_8m.build.variant=sanguino
 
 ##############################################################
 
