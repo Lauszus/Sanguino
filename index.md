@@ -4,7 +4,7 @@ title: Home
 branch: master
 ---
 
-#### Developed by Kristian Lauszus, TKJ Electronics 2012
+#### Developed by Kristian Sloth Lauszus, 2012
 
 The code is released under the GNU General Public License.
 
@@ -25,8 +25,8 @@ Now move the Sanguino directory inside that folder. The structure would look lik
 			<li style="padding-left:6em">variants/</li>
 			<li style="padding-left:6em">README.md</li>
 			<li style="padding-left:6em">boards.txt</li>
-</ul>			
+</ul>
 
 It's compatible with the Arduino IDE 1.5.x as well. See the following site for more information: <http://code.google.com/p/arduino/wiki/Platforms1>.
 
-For more information see the following site: <http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware> or send me an email at <a href="mailto:kristianl@tkjelectronics.dk?Subject=Sanguino">kristianl@tkjelectronics.dk</a>.
+For more information see the following site: <http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware> or send me an email at <a href="mailto:lauszus@gmail.com?Subject=Sanguino">lauszus@gmail.com</a>.
