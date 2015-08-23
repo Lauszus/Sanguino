@@ -26,7 +26,7 @@
   11/25/11  - ryan@ryanmsutton.com - Add pins for Sanguino 644P and 1284P
   07/15/12  - ryan@ryanmsutton.com - Updated for arduino0101
 
-  Improvements by Kristian Lauszus, kristianl@tkjelectronics.dk
+  Improvements by Kristian Sloth Lauszus, lauszus@gmail.com
 */
 
 #ifndef Pins_Arduino_h
