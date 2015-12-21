@@ -5,8 +5,7 @@ _________
 
 This is a Sanguino third-party hardware add-on for the Arduino IDE.
 
-To use it, simply create a folder named hardware inside your sketchbook directory.
-Now move the Sanguino directory inside that folder. The structure would look like this:
+To use it either use the Arduino board manager and add the following url: <https://raw.githubusercontent.com/Lauszus/Sanguino/master/package_lauszus_sanguino_index.json> or simply create a folder named hardware inside your sketchbook directory. Now move the Sanguino directory inside that folder. The structure would look like this:
 
 * Arduino/
 	* hardware/
