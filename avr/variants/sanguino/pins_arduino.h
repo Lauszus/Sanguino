@@ -34,24 +34,42 @@
 
 #include <avr/pgmspace.h>
 
-static const uint8_t SS   = 4;
-static const uint8_t MOSI = 5;
-static const uint8_t MISO = 6;
-static const uint8_t SCK  = 7;
 
-static const uint8_t SDA = 17;
-static const uint8_t SCL = 16;
+#define PIN_SPI_SS   (4)
+#define PIN_SPI_MOSI (5)
+#define PIN_SPI_MISO (6)
+#define PIN_SPI_SCK  (7)
+
+static const uint8_t SS   = PIN_SPI_SS;
+static const uint8_t MOSI = PIN_SPI_MOSI;
+static const uint8_t MISO = PIN_SPI_MISO;
+static const uint8_t SCK  = PIN_SPI_SCK;
+
+#define PIN_WIRE_SDA (17)
+#define PIN_WIRE_SCL (16)
+
+static const uint8_t SDA = PIN_WIRE_SDA;
+static const uint8_t SCL = PIN_WIRE_SCL;
 
 #define LED_BUILTIN 0
 
-static const uint8_t A0 = 31;
-static const uint8_t A1 = 30;
-static const uint8_t A2 = 29;
-static const uint8_t A3 = 28;
-static const uint8_t A4 = 27;
-static const uint8_t A5 = 26;
-static const uint8_t A6 = 25;
-static const uint8_t A7 = 24;
+#define PIN_A0 (31)
+#define PIN_A1 (30)
+#define PIN_A2 (29)
+#define PIN_A3 (28)
+#define PIN_A4 (27)
+#define PIN_A5 (26)
+#define PIN_A6 (25)
+#define PIN_A7 (24)
+
+static const uint8_t A0 = PIN_A0;
+static const uint8_t A1 = PIN_A1;
+static const uint8_t A2 = PIN_A2;
+static const uint8_t A3 = PIN_A3;
+static const uint8_t A4 = PIN_A4;
+static const uint8_t A5 = PIN_A5;
+static const uint8_t A6 = PIN_A6;
+static const uint8_t A7 = PIN_A7;
 
 // ATMEL ATMEGA644/ATMEGA1284 / SANGUINO
 //
