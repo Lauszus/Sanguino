@@ -26,7 +26,7 @@
   11/25/11  - ryan@ryanmsutton.com - Add pins for Sanguino 644P and 1284P
   07/15/12  - ryan@ryanmsutton.com - Updated for arduino0101
   12/24/16  - bob.kuhn@att.net     - add 1284 PWMs
-  
+
 
   Improvements by Kristian Sloth Lauszus, lauszus@gmail.com
 */
@@ -98,17 +98,16 @@ static const uint8_t A7 = PIN_A7;
 //       PWM (D 14) PD6 20|        |21  PD7 (D 15) PWM
 //                        +--------+
 //
-#define NUM_DIGITAL_PINS            24
+#define NUM_DIGITAL_PINS            32
 #define NUM_ANALOG_INPUTS           8
 
 #define analogInputToDigitalPin(p)  ((p < 8) ? 31 - (p): -1)
 #define analogPinToChannel(p)       ((p) < 8 ? (p) : (p) >= 24 ? 31 - (p) : -1)
 
-#if defined(__AVR_ATmega644__) || defined(__AVR_ATmega644P__)
-#define digitalPinHasPWM(p)         ((p) == 3 || (p) == 4 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15)
-
-#elif defined(__AVR_ATmega1284__) || defined(__AVR_ATmega1284P__)
- #define digitalPinHasPWM(p)        ((p) == 3 || (p) == 4 || (p) == 6 || (p) == 7 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15)
+#if defined(TCCR3A)
+  #define digitalPinHasPWM(p)       ((p) == 3 || (p) == 4 || (p) == 6 || (p) == 7 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15)
+#else
+  #define digitalPinHasPWM(p)       ((p) == 3 || (p) == 4 || (p) == 12 || (p) == 13 || (p) == 14 || (p) == 15)
 #endif
 
 #define digitalPinToPCICR(p)        ( (((p) >= 0) && ((p) <= 31)) ? (&PCICR) : ((uint8_t *)0) )
@@ -241,13 +240,13 @@ const uint8_t PROGMEM digital_pin_to_timer_PGM[] =
         TIMER0A,        /* 3  - PB3 */
         TIMER0B,        /* 4  - PB4 */
         NOT_ON_TIMER,   /* 5  - PB5 */
-#if  defined(__AVR_ATmega644__) || defined(__AVR_ATmega644P__)
+#if defined(TCCR3A)
+        TIMER3A,        /* 6  - PB6 */
+        TIMER3B,        /* 7  - PB7 */
+#else
         NOT_ON_TIMER,   /* 6  - PB6 */
         NOT_ON_TIMER,   /* 7  - PB7 */
-#elif defined(__AVR_ATmega1284__) || defined(__AVR_ATmega1284P__)
-        TIMER3A,        /* 6  - PB6 */
-        TIMER3B,        /* 7  - PB7 */ 
-#endif        
+#endif
         NOT_ON_TIMER,   /* 8  - PD0 */
         NOT_ON_TIMER,   /* 9  - PD1 */
         NOT_ON_TIMER,   /* 10 - PD2 */
