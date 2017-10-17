@@ -1,0 +1,20 @@
+language: c
+
+sudo: false
+
+before_install:
+    - source <(curl -SLs https://raw.githubusercontent.com/fede2cr/travis-ci-arduino/master/install.sh)
+
+install:
+    - arduino --pref "boardsmanager.additional.urls=https://raw.githubusercontent.com/Lauszus/Sanguino/master/package_lauszus_sanguino_index.json" --save-prefs
+    - arduino --install-boards Sanguino:avr
+    - export BLINK=$(find $HOME/arduino_ide -type f -name 'Blink.ino' -print -quit)
+    - echo "Compiling \"$BLINK\""
+
+script:
+    - arduino --verify --board Sanguino:avr:sanguino:cpu=atmega644 $BLINK
+    - arduino --verify --board Sanguino:avr:sanguino:cpu=atmega644_8m $BLINK
+    - arduino --verify --board Sanguino:avr:sanguino:cpu=atmega644p $BLINK
+    - arduino --verify --board Sanguino:avr:sanguino:cpu=atmega644p_8m $BLINK
+    - arduino --verify --board Sanguino:avr:sanguino:cpu=atmega1284p $BLINK
+    - arduino --verify --board Sanguino:avr:sanguino:cpu=atmega1284p_8m $BLINK

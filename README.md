@@ -2,6 +2,7 @@
 
 The code is released under the GNU General Public License.
 _________
+[![Build Status](https://travis-ci.org/Lauszus/Sanguino.svg?branch=master)](https://travis-ci.org/Lauszus/Sanguino)
 
 This is a Sanguino third-party hardware add-on for the Arduino IDE.
 
