@@ -103,7 +103,7 @@ STK500-2 = $(STK500) -d$(MCU_TARGET) -ms -q -lCF -LCF -cUSB -I200kHz -s -wt
 
 
 OBJ        = $(PROGRAM).o
-OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types -mshort-calls
+OPTIMIZE = -Os -fno-split-wide-types -mrelax
 
 DEFS       = 
 LIBS       =
