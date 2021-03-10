@@ -39,7 +39,7 @@ upload_speed = 57600
 
 This is needed if you have not burned the Optiboot bootloader.
 
-The list of boards can be found here: <http://docs.platformio.org/en/latest/platforms/embedded_boards.html#sanguino>.
+The list of boards can be found here: <http://docs.platformio.org/en/latest/platforms/atmelavr.html#sanguino>.
 
 ## ATmega1284
 
